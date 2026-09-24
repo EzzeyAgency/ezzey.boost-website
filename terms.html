@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#1E2A36">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | BOOST by EZZEY</title>
+<meta name="description" content="These Terms of Service govern participation in BOOST, including the 90-Day Visibility Guarantee Terms: what is measured, how, who qualifies, and the remedy available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+<style>
+:root{
+  --blue:#29A9E1;
+  --orange:#F9A03A;
+  --orange-deep:#F28C1B;
+  --heading:#3B3F45;
+  --body:#666C72;
+  --gray-bg:#F1F1F1;
+  --white:#FFFFFF;
+  --rule:#E5E5E5;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Poppins',Arial,Helvetica,sans-serif;
+  color:var(--body);background:var(--white);
+  line-height:1.75;font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 30px;}
+h1,h2,h3{color:var(--heading);font-weight:700;line-height:1.25;}
+.btn-orange{
+  display:inline-block;background:var(--orange);color:#fff;
+  font-weight:600;font-size:14px;text-decoration:none;
+  padding:12px 26px;border-radius:4px;transition:background .2s;
+}
+.btn-orange:hover{background:var(--orange-deep);}
+
+header{background:var(--white);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(0,0,0,0.07);}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;}
+.brand-logo{display:block;height:46px;width:auto;}
+.brand .tagline{color:var(--heading);font-weight:600;font-size:14px;}
+.nav-right{display:flex;align-items:center;gap:22px;}
+.back-link{color:var(--heading);text-decoration:none;font-weight:600;font-size:14px;}
+.back-link:hover{color:var(--blue);}
+
+.tos-hero{
+  background:linear-gradient(135deg,#EAF4FD 0%,#FFFFFF 55%,#EAF4FD 100%);
+  padding:64px 0 56px;
+}
+.tos-eyebrow{display:flex;align-items:center;gap:8px;color:var(--heading);font-weight:600;font-size:13.5px;margin-bottom:10px;}
+.tos-eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue);}
+.tos-hero h1{font-size:clamp(34px,5vw,52px);margin-bottom:10px;}
+.tos-date{color:var(--blue);font-weight:600;font-size:13.5px;margin-bottom:18px;}
+.tos-hero p.intro{max-width:640px;font-size:15.5px;}
+
+.tos-layout{display:grid;grid-template-columns:250px 1fr;gap:56px;padding:72px 0 90px;align-items:start;}
+.toc{
+  position:sticky;top:92px;
+  background:#FDF6EC;border:1px solid #F3E3C8;border-radius:10px;
+  padding:22px 22px;
+}
+.toc p{font-weight:700;color:var(--heading);font-size:13.5px;margin-bottom:10px;}
+.toc a{
+  display:block;color:var(--body);text-decoration:none;
+  font-size:12.5px;padding:3px 0;line-height:1.5;
+}
+.toc a:hover{color:var(--blue);}
+
+.tos-content h2{font-size:clamp(24px,3vw,32px);margin-bottom:34px;}
+.tos-content section{padding:0 0 34px;margin-bottom:34px;border-bottom:1px solid var(--rule);scroll-margin-top:100px;}
+.tos-content section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.tos-content h3{font-size:18px;margin-bottom:14px;}
+.tos-content p{margin-bottom:16px;max-width:720px;}
+.tos-content p:last-child{margin-bottom:0;}
+.tos-content ol{margin:0 0 16px 22px;max-width:700px;}
+.tos-content ol li{margin-bottom:10px;padding-left:6px;}
+
+footer{background:var(--gray-bg);border-top:1px solid var(--rule);padding:34px 0;}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;}
+footer a{color:var(--body);}
+footer a:hover{color:var(--blue);}
+
+/* Booking modal */
+.modal-overlay{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(20,30,40,0.72);
+  display:none;align-items:center;justify-content:center;padding:24px;
+}
+.modal-overlay.open{display:flex;}
+.modal-box{
+  background:#fff;border-radius:10px;width:100%;max-width:900px;
+  height:min(86vh,760px);position:relative;
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+  overflow:auto;-webkit-overflow-scrolling:touch;
+}
+.modal-close{
+  position:absolute;top:10px;right:10px;z-index:2;
+  width:38px;height:38px;border:none;border-radius:50%;
+  background:var(--gray-bg);color:var(--heading);
+  font-size:20px;font-weight:700;cursor:pointer;line-height:1;
+}
+.modal-close:hover{background:var(--orange);color:#fff;}
+.modal-box iframe{width:100%;height:100%;border:0;}
+body.modal-open{overflow:hidden;}
+
+@media (max-width:860px){
+  .tos-layout{grid-template-columns:1fr;gap:34px;padding:48px 0 64px;}
+  .toc{position:static;}
+  .tos-hero{padding:44px 0 40px;}
+}
+@media (max-width:520px){
+  .brand-logo{height:38px;}
+  .brand .tagline{display:none;}
+  .back-link{display:none;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="BOOST by EZZEY home">
+      <img class="brand-logo" src="assets/boost-logo.png" alt="EZZEY B.O.O.S.T.">
+      <span class="tagline">Visibility. Trust. Growth.</span>
+    </a>
+    <span class="nav-right">
+      <a class="back-link" href="/">Back to BOOST</a>
+      <a class="btn-orange" href="https://ezzey.com/contact-us/" id="demo-btn">Book a 15-Minute Demo &nearr;</a>
+    </span>
+  </div>
+</header>
+
+<div class="tos-hero">
+  <div class="wrap">
+    <p class="tos-eyebrow">BOOST by EZZEY</p>
+    <h1>Terms of Service</h1>
+    <p class="tos-date">Effective Date: September 15, 2026</p>
+    <p class="intro">These Terms of Service govern participation in BOOST. The following 90-Day Visibility Guarantee Terms explain the result Ezzey Digital Marketing measures, how the measurement is made, who qualifies, and the remedy available if the guaranteed result is not achieved.</p>
+  </div>
+</div>
+
+<div class="wrap tos-layout">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <a href="#g1">1. The guarantee</a>
+    <a href="#g2">2. Guaranteed result</a>
+    <a href="#g3">3. Start date</a>
+    <a href="#g4">4. Measurement</a>
+    <a href="#g5">5. Data source</a>
+    <a href="#g6">6. Eligibility</a>
+    <a href="#g7">7. Responsibilities</a>
+    <a href="#g8">8. Material events</a>
+    <a href="#g9">9. Seasonality</a>
+    <a href="#g10">10. Paid advertising</a>
+    <a href="#g11">11. Continued work</a>
+    <a href="#g12">12. Outside our control</a>
+    <a href="#g13">13. Exclusive remedy</a>
+    <a href="#g14">14. Review</a>
+    <a href="#g15">15. Relationship to Terms</a>
+  </nav>
+
+  <div class="tos-content">
+    <h2>BOOST 90-Day Visibility Guarantee Terms</h2>
+
+    <section id="g1">
+      <h3>1. The guarantee</h3>
+      <p>Ezzey Digital Marketing guarantees that an eligible customer's Google Business Profile views will increase during the first 90 days of BOOST. If the guaranteed increase is not achieved, Ezzey Digital Marketing will continue the visibility work included in the customer's BOOST plan at no additional service fee until the guaranteed result is achieved.</p>
+      <p>This is a continued-work guarantee. It is not a money-back guarantee and does not provide a refund.</p>
+    </section>
+
+    <section id="g2">
+      <h3>2. What counts as the guaranteed result</h3>
+      <p>The guaranteed result is any increase in Google Business Profile views during the measurement period when compared with the baseline period.</p>
+      <p>Google Business Profile views measure visibility. They do not establish or guarantee a specific search position, number of leads, calls, booked jobs, sales, revenue, return on investment, or other business result.</p>
+    </section>
+
+    <section id="g3">
+      <h3>3. Guarantee start date</h3>
+      <p>The 90-day guarantee period begins on the date Ezzey Digital Marketing receives usable access to the customer's verified Google Business Profile. Ezzey Digital Marketing will record this date as the guarantee start date.</p>
+      <p>If the access provided does not permit Ezzey Digital Marketing to perform the included work or obtain the required performance data, the guarantee period will not begin until usable access is provided.</p>
+    </section>
+
+    <section id="g4">
+      <h3>4. Baseline and measurement period</h3>
+      <p>The baseline period is the 30 complete consecutive days immediately before the guarantee start date.</p>
+      <p>The measurement period is the final 30 complete days of the customer's initial 90-day guarantee period. Ezzey Digital Marketing will compare the Google Business Profile views recorded during the measurement period with the views recorded during the baseline period.</p>
+      <p>The guarantee is achieved if the measurement-period total is greater than the baseline-period total.</p>
+    </section>
+
+    <section id="g5">
+      <h3>5. Controlling data source</h3>
+      <p>Ezzey Digital Marketing will use the performance data available through the customer's Google Business Profile as the controlling source for the baseline and measurement-period totals.</p>
+      <p>Ezzey Digital Marketing will retain a record of the baseline, guarantee start date, and evaluation result. Google may change the names, definitions, availability, or calculation of its performance metrics. If Google replaces the views metric, Ezzey Digital Marketing may use the closest reasonably equivalent successor metric and will document that change.</p>
+    </section>
+
+    <section id="g6">
+      <h3>6. Eligibility requirements</h3>
+      <p>To qualify for the guarantee, the customer must meet all of the following requirements on the guarantee start date:</p>
+      <ol>
+        <li>The customer must have a verified, active Google Business Profile that is not suspended or disabled.</li>
+        <li>The Google Business Profile must have at least 10 published Google reviews.</li>
+        <li>The customer must provide Ezzey Digital Marketing with usable access to the Google Business Profile.</li>
+        <li>The customer must provide accurate business information and the materials reasonably required to perform the included BOOST work.</li>
+        <li>The customer must not have launched a new website, completed a material website redesign, changed domains, or made another material structural website change during the 90 days before the guarantee start date.</li>
+        <li>The customer must not have received a Google review rated three stars or fewer during the 90 days before the guarantee start date.</li>
+        <li>The customer must disclose any other marketing provider, search optimization provider, paid advertising campaign, or third party that has access to or is making changes to the Google Business Profile, website, or local business listings.</li>
+      </ol>
+      <p>A public street address is not required. An eligible service-area business may qualify without displaying its address publicly.</p>
+      <p>Ezzey Digital Marketing will evaluate eligibility during onboarding. If a customer does not qualify, Ezzey Digital Marketing will disclose that determination promptly. The customer may choose to proceed with BOOST without the guarantee if that choice is confirmed in writing.</p>
+    </section>
+
+    <section id="g7">
+      <h3>7. Customer responsibilities during the guarantee period</h3>
+      <p>The customer must maintain usable Google Business Profile access throughout the guarantee period and any continued-work period. The customer must provide requested information and approvals within a reasonable time. The customer must keep its business information accurate and comply with applicable Google Business Profile policies.</p>
+      <p>The customer must notify Ezzey Digital Marketing before allowing another person or provider to change the Google Business Profile, website, tracking configuration, local listings, business name, primary category, address, service area, phone number, or other information that could materially affect visibility or measurement.</p>
+      <p>If the customer removes access, delays required information or approvals, supplies inaccurate information, violates platform policies, or permits conflicting third-party changes, Ezzey Digital Marketing may pause the guarantee. Ezzey Digital Marketing will notify the customer in writing of the reason for the pause and what is required to resume the guarantee.</p>
+    </section>
+
+    <section id="g8">
+      <h3>8. Reviews, website changes, and other material events</h3>
+      <p>A material negative-review event, Google Business Profile suspension, website launch, website migration, major redesign, business relocation, change of ownership, change of business name, material change in services, or other event outside the included BOOST work may affect visibility.</p>
+      <p>If such an event occurs during the guarantee period, Ezzey Digital Marketing will review its effect. Ezzey Digital Marketing may pause the guarantee, establish a new baseline, or determine that the guarantee no longer applies when the event prevents a fair comparison. Ezzey Digital Marketing will provide the customer with written notice and the reason for the decision.</p>
+    </section>
+
+    <section id="g9">
+      <h3>9. Seasonal businesses and market-wide changes</h3>
+      <p>Search demand may change because of seasonality, weather, market conditions, economic events, regulatory events, or changes in customer behavior. Ezzey Digital Marketing will identify material seasonality during onboarding when reasonably possible.</p>
+      <p>For a clearly seasonal business, Ezzey Digital Marketing may use the corresponding 30-day period from the previous year instead of the immediately preceding 30-day period. Any different baseline must be disclosed to the customer in writing before the guarantee start date.</p>
+      <p>Ezzey Digital Marketing may also consider reliable market-demand data when a substantial market-wide decline makes the standard comparison misleading. Ezzey Digital Marketing will not apply a seasonality or market exception solely because the customer's own performance declined. Any exception must be supported by documented market evidence and communicated to the customer.</p>
+    </section>
+
+    <section id="g10">
+      <h3>10. Paid advertising and third-party activity</h3>
+      <p>The guarantee is intended to measure the visibility affected by the included BOOST work. The customer must disclose Google Ads, Local Services Ads, or other paid campaigns that may affect Google Business Profile performance data.</p>
+      <p>When paid or third-party activity materially affects the controlling metric, Ezzey Digital Marketing will use a reasonable like-for-like comparison when the data permits. If the effect cannot be separated reliably, Ezzey Digital Marketing may postpone the evaluation, establish a documented alternative comparison, or determine before the guarantee start date that the customer is not eligible.</p>
+    </section>
+
+    <section id="g11">
+      <h3>11. The continued-work remedy</h3>
+      <p>If the measurement-period total does not exceed the baseline-period total, Ezzey Digital Marketing will continue the visibility work included in the customer's BOOST plan without charging an additional BOOST service fee.</p>
+      <p>The continued-work period lasts until one complete subsequent 30-day reporting period shows Google Business Profile views greater than the baseline-period total, provided the customer remains eligible and satisfies the customer responsibilities in these terms.</p>
+      <p>The continued-work remedy covers only the visibility work included in the customer's existing BOOST plan. It does not include advertising spend, third-party charges, taxes, optional services, website development, reputation-management services, or work outside the BOOST plan unless Ezzey Digital Marketing agrees otherwise in writing.</p>
+      <p>Regular BOOST service billing resumes with the next billing cycle after the guaranteed result is achieved.</p>
+    </section>
+
+    <section id="g12">
+      <h3>12. Events outside Ezzey Digital Marketing's control</h3>
+      <p>Ezzey Digital Marketing does not control Google's algorithms, products, policies, reporting systems, platform availability, suspensions, metric definitions, or decisions about how and when a Business Profile appears.</p>
+      <p>Ezzey Digital Marketing is not responsible for delays or measurement problems caused by platform outages, unavailable or incomplete Google data, unlawful activity, customer or third-party interference, force majeure events, or other circumstances outside Ezzey Digital Marketing's reasonable control. When reasonably possible, Ezzey Digital Marketing will document the issue and use a fair alternative evaluation date or method rather than relying on an undisclosed exception.</p>
+    </section>
+
+    <section id="g13">
+      <h3>13. Exclusive guarantee remedy</h3>
+      <p>Continued performance of the included BOOST visibility work at no additional service fee is the customer's sole remedy under this guarantee. The guarantee does not entitle the customer to a refund, reimbursement, credit for prior service fees, or payment for alleged lost revenue or opportunities.</p>
+      <p>Nothing in these guarantee terms changes any right or obligation that cannot lawfully be limited under applicable law.</p>
+    </section>
+
+    <section id="g14">
+      <h3>14. Guarantee review</h3>
+      <p>Ezzey Digital Marketing will review the controlling Google Business Profile data after the initial 90-day period. A customer may request a review of the calculation or eligibility decision through the customer's Ezzey Digital Marketing account contact.</p>
+      <p>Ezzey Digital Marketing will provide the baseline period, measurement period, recorded view totals, and the reason for its decision upon reasonable request.</p>
+    </section>
+
+    <section id="g15">
+      <h3>15. Relationship to the remaining Terms of Service</h3>
+      <p>These guarantee terms form part of the BOOST Terms of Service. If another provision conflicts with these guarantee terms concerning the 90-Day Visibility Guarantee, these guarantee terms control for that issue.</p>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; Ezzey Digital Marketing. All rights reserved.</span>
+    <a href="/">Return to BOOST</a>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-label="Book a call">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <iframe id="booking-frame" title="Booking calendar" allow="payment"></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var CALENDAR_URL = "https://api.leadconnectorhq.com/widget/booking/4GtUnhFV6QXtAx5nOVw7";
+  var overlay = document.getElementById('booking-modal');
+  var frame = document.getElementById('booking-frame');
+  var loaded = false;
+  function openModal(e){
+    if(e) e.preventDefault();
+    if(!loaded){
+      frame.src = CALENDAR_URL;
+      var s = document.createElement('script');
+      s.src = 'https://link.msgsndr.com/js/form_embed.js';
+      document.body.appendChild(s);
+      loaded = true;
+    }
+    overlay.classList.add('open');
+    document.body.classList.add('modal-open');
+  }
+  function closeModal(){
+    overlay.classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
+  document.getElementById('demo-btn').addEventListener('click', openModal);
+  overlay.querySelector('.modal-close').addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e){ if(e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+})();
+</script>
+</body>
+</html>
