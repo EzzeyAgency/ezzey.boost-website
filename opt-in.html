@@ -578,7 +578,6 @@ body.modal-open{overflow:hidden;}
   border-radius:12px;overflow:hidden;
   box-shadow:0 24px 60px rgba(0,0,0,0.45);
 }
-.vsl-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:none;}
 .vsl-ph{
   position:absolute;inset:0;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
@@ -591,7 +590,6 @@ body.modal-open{overflow:hidden;}
 }
 .vsl-ph .play svg{margin-left:5px;}
 .vsl-ph p{font-weight:600;font-size:15px;letter-spacing:0.5px;}
-.vsl-video{position:absolute;inset:0;width:100%;height:100%;background:#000;object-fit:contain;}
 .book{padding:80px 0 30px;text-align:center;}
 .book h2{margin-bottom:10px;}
 .book .b-sub{color:var(--body);font-size:16px;margin-bottom:8px;}
@@ -618,8 +616,18 @@ body.modal-open{overflow:hidden;}
       <h1>More Customers Finding Your Business in 90 Days. <span class="accent">Guaranteed.</span></h1>
       <p class="v-sub">If your Google Business Profile views do not increase in your first 90 days, we keep doing the visibility work at no additional service fee until they do. No contracts. No hidden fees.</p>
       <div class="vsl-frame">
-        <iframe id="vsl-player" title="BOOST video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        <video class="vsl-video" id="vsl-placeholder" src="assets/boost-vsl.mp4#t=0.1" controls playsinline preload="metadata"></video>
+<div id="vidalytics_embed_xP9xcwgw4wUCu78m" style="width: 100%; position:relative; padding-top: 56.25%;"></div>
+<script type="text/javascript">
+(function (v, i, d, a, l, y, t, c, s) {
+    y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
+    if (!vsl){vsl=function(u,cb){
+        if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+        if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+        i.getElementsByTagName("head")[0].appendChild(s);
+    };}
+    vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+})(window, document, 'Vidalytics', 'vidalytics_embed_xP9xcwgw4wUCu78m', 'https://fast.vidalytics.com/embeds/izSI5rWM/xP9xcwgw4wUCu78m/');
+</script>
       </div>
     </div>
   </div>
@@ -661,20 +669,6 @@ body.modal-open{overflow:hidden;}
   </div>
 </footer>
 
-<script>
-(function(){
-  // Placeholder VSL plays from assets/boost-vsl.mp4. To use a hosted player instead,
-  // paste the finished VSL embed URL between the quotes below
-  // (YouTube: https://www.youtube-nocookie.com/embed/VIDEOID  |  Vimeo: https://player.vimeo.com/video/VIDEOID)
-  var VSL_URL = "";
-  if (VSL_URL) {
-    var f = document.getElementById('vsl-player');
-    f.src = VSL_URL;
-    f.style.display = 'block';
-    document.getElementById('vsl-placeholder').style.display = 'none';
-  }
-})();
-</script>
 <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
 </div>
 </body>
