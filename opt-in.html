@@ -591,6 +591,7 @@ body.modal-open{overflow:hidden;}
 }
 .vsl-ph .play svg{margin-left:5px;}
 .vsl-ph p{font-weight:600;font-size:15px;letter-spacing:0.5px;}
+.vsl-video{position:absolute;inset:0;width:100%;height:100%;background:#000;object-fit:contain;}
 .book{padding:80px 0 30px;text-align:center;}
 .book h2{margin-bottom:10px;}
 .book .b-sub{color:var(--body);font-size:16px;margin-bottom:8px;}
@@ -618,12 +619,7 @@ body.modal-open{overflow:hidden;}
       <p class="v-sub">If your Google Business Profile views do not increase in your first 90 days, we keep doing the visibility work at no additional service fee until they do. No contracts. No hidden fees.</p>
       <div class="vsl-frame">
         <iframe id="vsl-player" title="BOOST video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        <div class="vsl-ph" id="vsl-placeholder">
-          <span class="play" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="#8FA3B5"><path d="M8 5v14l11-7z"/></svg>
-          </span>
-          <p>VIDEO COMING SOON</p>
-        </div>
+        <video class="vsl-video" id="vsl-placeholder" src="assets/boost-vsl.mp4#t=0.1" controls playsinline preload="metadata"></video>
       </div>
     </div>
   </div>
@@ -667,7 +663,8 @@ body.modal-open{overflow:hidden;}
 
 <script>
 (function(){
-  // Paste the finished VSL embed URL between the quotes below
+  // Placeholder VSL plays from assets/boost-vsl.mp4. To use a hosted player instead,
+  // paste the finished VSL embed URL between the quotes below
   // (YouTube: https://www.youtube-nocookie.com/embed/VIDEOID  |  Vimeo: https://player.vimeo.com/video/VIDEOID)
   var VSL_URL = "";
   if (VSL_URL) {
