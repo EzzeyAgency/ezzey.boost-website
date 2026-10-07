@@ -40,7 +40,7 @@ h1,h2,h3{color:var(--heading);font-weight:700;line-height:1.25;}
 .btn-orange:hover{background:var(--orange-deep);}
 
 header{background:var(--white);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(0,0,0,0.07);}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px;flex-wrap:wrap;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;gap:20px;flex-wrap:wrap;}
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none;}
 .brand-logo{display:block;height:46px;width:auto;}
 .brand .tagline{color:var(--heading);font-weight:600;font-size:14px;}
@@ -58,7 +58,7 @@ header{background:var(--white);position:sticky;top:0;z-index:50;box-shadow:0 1px
 .tos-date{color:var(--blue);font-weight:600;font-size:13.5px;margin-bottom:18px;}
 .tos-hero p.intro{max-width:640px;font-size:15.5px;}
 
-.tos-layout{display:grid;grid-template-columns:250px 1fr;gap:56px;padding:72px 0 90px;align-items:start;}
+.tos-layout{display:grid;grid-template-columns:250px 1fr;gap:56px;padding-top:72px;padding-bottom:90px;align-items:start;}
 .toc{
   position:sticky;top:92px;
   background:#FDF6EC;border:1px solid #F3E3C8;border-radius:10px;
@@ -109,14 +109,16 @@ footer a:hover{color:var(--blue);}
 body.modal-open{overflow:hidden;}
 
 @media (max-width:860px){
-  .tos-layout{grid-template-columns:1fr;gap:34px;padding:48px 0 64px;}
+  .tos-layout{grid-template-columns:1fr;gap:34px;padding-top:48px;padding-bottom:64px;}
   .toc{position:static;}
+  .toc a{padding:8px 0;}
   .tos-hero{padding:44px 0 40px;}
 }
 @media (max-width:520px){
   .brand-logo{height:38px;}
   .brand .tagline{display:none;}
   .back-link{display:none;}
+  footer a{display:inline-block;padding:10px 0;}
 }
 </style>
 </head>
